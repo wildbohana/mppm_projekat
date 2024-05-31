@@ -1,0 +1,199 @@
+<rdf:RDF 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:cim="http://iec.ch/TC57/2010/CIM-schema-cim15#"
+	xmlns:ftn="http://www.ftnydro.com/CIM15/2010/extension#">
+
+	<!-- SubGeographicalRegion -->
+	<!-- Line -->
+	<!-- PerLengthSequenceImpendance -->
+	<!-- SeriesCompensator -->
+	<!-- ACLineSegment -->
+	<!-- DCLineSegment -->
+
+	<!-- SubGeographicalRegion x3 -->
+	<cim:SubGeographicalRegion rdf:ID="SGR_01">
+		<cim:IdentifiedObject.aliasName>Vojvodina</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SGR_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Sever</cim:IdentifiedObject.name>
+	</cim:SubGeographicalRegion>
+
+	<cim:SubGeographicalRegion rdf:ID="SGR_02">
+		<cim:IdentifiedObject.aliasName>Sumadija</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SGR_02</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Centar</cim:IdentifiedObject.name>
+	</cim:SubGeographicalRegion>
+
+	<cim:SubGeographicalRegion rdf:ID="SGR_03">
+		<cim:IdentifiedObject.aliasName>Nis</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SGR_03</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Jug</cim:IdentifiedObject.name>
+	</cim:SubGeographicalRegion>
+
+	<!-- Line x4 -->
+	<cim:Line rdf:ID="LN_01">
+		<cim:IdentifiedObject.aliasName>Dalekovod_BG1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>LN_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>VN021-7</cim:IdentifiedObject.name>
+		<cim:Line.Region rdf:resource="#SGR_02"/>
+	</cim:Line>
+
+	<cim:Line rdf:ID="LN_02">
+		<cim:IdentifiedObject.aliasName>Dalekovod_BG2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>LN_02</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>VN011-4</cim:IdentifiedObject.name>
+		<cim:Line.Region rdf:resource="#SGR_02"/>
+	</cim:Line>
+
+	<cim:Line rdf:ID="LN_03">
+		<cim:IdentifiedObject.aliasName>Dalekovod_NS1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>LN_03</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>VN021-3</cim:IdentifiedObject.name>		
+		<cim:Line.Region rdf:resource="#SGR_01"/>
+	</cim:Line>
+
+	<cim:Line rdf:ID="LN_04">
+		<cim:IdentifiedObject.aliasName>Dalekovod_NIS1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>LN_04</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>VN031-2</cim:IdentifiedObject.name>		
+		<cim:Line.Region rdf:resource="#SGR_03"/>
+	</cim:Line>
+
+	<!-- PerLengthSequenceImpendance x3 -->
+	<cim:PerLengthSequenceImpedance rdf:ID="PLSI_01">
+		<cim:IdentifiedObject.aliasName>Prva</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>PLSI_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Impendanca1</cim:IdentifiedObject.name>
+		<cim:PerLengthSequenceImpedance.b0ch>0.2</cim:PerLengthSequenceImpedance.b0ch>
+		<cim:PerLengthSequenceImpedance.bch>2.1</cim:PerLengthSequenceImpedance.bch>
+		<cim:PerLengthSequenceImpedance.g0ch>4.2</cim:PerLengthSequenceImpedance.g0ch>
+		<cim:PerLengthSequenceImpedance.gch>1.3</cim:PerLengthSequenceImpedance.gch>
+		<cim:PerLengthSequenceImpedance.r>7.3</cim:PerLengthSequenceImpedance.r>
+		<cim:PerLengthSequenceImpedance.r0>5.4</cim:PerLengthSequenceImpedance.r0>
+		<cim:PerLengthSequenceImpedance.x>8.4</cim:PerLengthSequenceImpedance.x>
+		<cim:PerLengthSequenceImpedance.x0>5.3</cim:PerLengthSequenceImpedance.x0>
+	</cim:PerLengthSequenceImpedance>
+
+	<cim:PerLengthSequenceImpedance rdf:ID="PLSI_02">
+		<cim:IdentifiedObject.aliasName>Druga</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>PLSI_02</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Impendanca2</cim:IdentifiedObject.name>
+		<cim:PerLengthSequenceImpedance.b0ch>1.5</cim:PerLengthSequenceImpedance.b0ch>
+		<cim:PerLengthSequenceImpedance.bch>4.1</cim:PerLengthSequenceImpedance.bch>
+		<cim:PerLengthSequenceImpedance.g0ch>5.3</cim:PerLengthSequenceImpedance.g0ch>
+		<cim:PerLengthSequenceImpedance.gch>2.2</cim:PerLengthSequenceImpedance.gch>
+		<cim:PerLengthSequenceImpedance.r>4.1</cim:PerLengthSequenceImpedance.r>
+		<cim:PerLengthSequenceImpedance.r0>2.2</cim:PerLengthSequenceImpedance.r0>
+		<cim:PerLengthSequenceImpedance.x>5.4</cim:PerLengthSequenceImpedance.x>
+		<cim:PerLengthSequenceImpedance.x0>3.3</cim:PerLengthSequenceImpedance.x0>
+	</cim:PerLengthSequenceImpedance>
+
+	<cim:PerLengthSequenceImpedance rdf:ID="PLSI_03">
+		<cim:IdentifiedObject.aliasName>Treca</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>PLSI_03</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Impendanca3</cim:IdentifiedObject.name>
+		<cim:PerLengthSequenceImpedance.b0ch>21.5</cim:PerLengthSequenceImpedance.b0ch>
+		<cim:PerLengthSequenceImpedance.bch>14.1</cim:PerLengthSequenceImpedance.bch>
+		<cim:PerLengthSequenceImpedance.g0ch>45.3</cim:PerLengthSequenceImpedance.g0ch>
+		<cim:PerLengthSequenceImpedance.gch>22.2</cim:PerLengthSequenceImpedance.gch>
+		<cim:PerLengthSequenceImpedance.r>41.1</cim:PerLengthSequenceImpedance.r>
+		<cim:PerLengthSequenceImpedance.r0>32.2</cim:PerLengthSequenceImpedance.r0>
+		<cim:PerLengthSequenceImpedance.x>52.4</cim:PerLengthSequenceImpedance.x>
+		<cim:PerLengthSequenceImpedance.x0>13.3</cim:PerLengthSequenceImpedance.x0>
+	</cim:PerLengthSequenceImpedance>
+
+	<!-- DCLineSegment x3 -->
+	<cim:DCLineSegment rdf:ID="DCLS_01">
+		<cim:Conductor.length>1000.0</cim:Conductor.length>
+		<cim:Equipment.EquipmentContainer rdf:resource="#LN_03"/>
+		<cim:IdentifiedObject.aliasName>Jednosmeran provodnik srednji</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>DCLS_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Provodnik_DC1</cim:IdentifiedObject.name>
+	</cim:DCLineSegment>
+
+	<cim:DCLineSegment rdf:ID="DCLS_02">
+		<cim:Conductor.length>333.0</cim:Conductor.length>
+		<cim:Equipment.EquipmentContainer rdf:resource="#LN_04"/>
+		<cim:IdentifiedObject.aliasName>Jednosmeran provodnik kraci</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>DCLS_02</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Provodnik_DC2</cim:IdentifiedObject.name>
+	</cim:DCLineSegment>
+
+	<cim:DCLineSegment rdf:ID="DCLS_03">
+		<cim:Conductor.length>2321.0</cim:Conductor.length>
+		<cim:Equipment.EquipmentContainer rdf:resource="#LN_03"/>
+		<cim:IdentifiedObject.aliasName>Jednosmeran provodnik duzi</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>DCLS_03</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Provodnik_DC3</cim:IdentifiedObject.name>
+	</cim:DCLineSegment>
+	
+	<!-- ACLineSegment x2 -->
+	<cim:ACLineSegment rdf:ID="ACLS_01">
+		<cim:ACLineSegment.PerLengthImpedance rdf:resource="#PLSI_01"/>
+		<cim:ACLineSegment.b0ch>4.1</cim:ACLineSegment.b0ch>
+		<cim:ACLineSegment.bch>2.2</cim:ACLineSegment.bch>
+		<cim:ACLineSegment.g0ch>4.3</cim:ACLineSegment.g0ch>
+		<cim:ACLineSegment.gch>2.1</cim:ACLineSegment.gch>
+		<cim:ACLineSegment.r>2.3</cim:ACLineSegment.r>
+		<cim:ACLineSegment.r0>1.4</cim:ACLineSegment.r0>
+		<cim:ACLineSegment.x>2.1</cim:ACLineSegment.x>
+		<cim:ACLineSegment.x0>1.3</cim:ACLineSegment.x0>
+		<cim:Conductor.length>1000.0</cim:Conductor.length>
+		<cim:Equipment.EquipmentContainer rdf:resource="#LN_01"/>
+		<cim:IdentifiedObject.aliasName>Naizmenican provodnik kraci</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>ACLS_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Provodnik_AC1</cim:IdentifiedObject.name>
+	</cim:ACLineSegment>
+
+	<cim:ACLineSegment rdf:ID="ACLS_02">
+		<cim:ACLineSegment.PerLengthImpedance rdf:resource="#PLSI_01"/>
+		<cim:ACLineSegment.b0ch>5.2</cim:ACLineSegment.b0ch>
+		<cim:ACLineSegment.bch>9.1</cim:ACLineSegment.bch>
+		<cim:ACLineSegment.g0ch>3.3</cim:ACLineSegment.g0ch>
+		<cim:ACLineSegment.gch>4.1</cim:ACLineSegment.gch>
+		<cim:ACLineSegment.r>3.3</cim:ACLineSegment.r>
+		<cim:ACLineSegment.r0>1.1</cim:ACLineSegment.r0>
+		<cim:ACLineSegment.x>2.1</cim:ACLineSegment.x>
+		<cim:ACLineSegment.x0>4.3</cim:ACLineSegment.x0>
+		<cim:Conductor.length>2000.0</cim:Conductor.length>
+		<cim:Equipment.EquipmentContainer rdf:resource="#LN_01"/>
+		<cim:IdentifiedObject.aliasName>Naizmenican provodnik duzi</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>ACLS_02</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Provodnik_AC2</cim:IdentifiedObject.name>
+	</cim:ACLineSegment>
+
+	<!-- EquipmentContainer je deo Line-a -->
+	<!-- SeriesCompensator x3 -->
+	<cim:SeriesCompensator rdf:ID="SC_01">
+		<cim:Equipment.EquipmentContainer rdf:resource="#LN_02"/>
+		<cim:SeriesCompensator.r>1.3</cim:SeriesCompensator.r>
+		<cim:SeriesCompensator.r0>1.2</cim:SeriesCompensator.r0>
+		<cim:SeriesCompensator.x>4.4</cim:SeriesCompensator.x>
+		<cim:SeriesCompensator.x0>3.2</cim:SeriesCompensator.x0>
+		<cim:IdentifiedObject.aliasName>Staticki serijski kompenzator 1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SC_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Kompenzator_01</cim:IdentifiedObject.name>
+	</cim:SeriesCompensator>
+	
+	<cim:SeriesCompensator rdf:ID="SC_02">
+		<cim:Equipment.EquipmentContainer rdf:resource="#LN_03"/>
+		<cim:SeriesCompensator.r>1.1</cim:SeriesCompensator.r>
+		<cim:SeriesCompensator.r0>3.5</cim:SeriesCompensator.r0>
+		<cim:SeriesCompensator.x>9.1</cim:SeriesCompensator.x>
+		<cim:SeriesCompensator.x0>2.3</cim:SeriesCompensator.x0>
+		<cim:IdentifiedObject.aliasName>Staticki serijski kompenzator 2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SC_02</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Kompenzator_02</cim:IdentifiedObject.name>
+	</cim:SeriesCompensator>
+
+	<cim:SeriesCompensator rdf:ID="SC_03">
+		<cim:Equipment.EquipmentContainer rdf:resource="#LN_01"/>
+		<cim:SeriesCompensator.r>11.3</cim:SeriesCompensator.r>
+		<cim:SeriesCompensator.r0>21.2</cim:SeriesCompensator.r0>
+		<cim:SeriesCompensator.x>64.4</cim:SeriesCompensator.x>
+		<cim:SeriesCompensator.x0>43.2</cim:SeriesCompensator.x0>
+		<cim:IdentifiedObject.aliasName>Staticki serijski kompenzator 3</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SC_03</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Kompenzator_03</cim:IdentifiedObject.name>
+	</cim:SeriesCompensator>
+
+</rdf:RDF>

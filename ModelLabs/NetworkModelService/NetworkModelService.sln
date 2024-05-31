@@ -1,0 +1,111 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceContracts", "ServiceContracts", "{19570575-2F42-4818-A632-193E0A78E576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkModelService", "NetworkModelService.csproj", "{2630D180-1B68-4E84-AEAC-42EE8C88B50F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkModelServiceSelfHost", "ServiceHost\NetworkModelServiceSelfHost\NetworkModelServiceSelfHost.csproj", "{E112FFCC-BD88-4056-99E1-0991A0E82588}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModel\DataModel.csproj", "{ADE96497-7C11-40B6-AE82-57F956C9F104}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{DD837AD7-3DE5-4E49-9924-3D73590CCCF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{E3F70031-2C0C-490B-BD29-FF28E10CE28F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\Common\Common.csproj", "{892CBE15-9ED7-4540-81FA-0EAABA592138}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkModelGDAContract", "..\ServiceContracts\NetworkModelQueryContract\NetworkModelGDAContract.csproj", "{B726FB71-D295-41EE-9644-B2B0B1BC8911}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMSTestClient", "Test\NMSTestClient\NMSTestClient.csproj", "{32EE9373-A350-42AC-972B-41B2EDABA082}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2630D180-1B68-4E84-AEAC-42EE8C88B50F}.Debug|x64.ActiveCfg = Debug|x64
+		{2630D180-1B68-4E84-AEAC-42EE8C88B50F}.Debug|x64.Build.0 = Debug|x64
+		{2630D180-1B68-4E84-AEAC-42EE8C88B50F}.Debug|x86.ActiveCfg = Debug|x86
+		{2630D180-1B68-4E84-AEAC-42EE8C88B50F}.Debug|x86.Build.0 = Debug|x86
+		{2630D180-1B68-4E84-AEAC-42EE8C88B50F}.Release|x64.ActiveCfg = Release|x64
+		{2630D180-1B68-4E84-AEAC-42EE8C88B50F}.Release|x64.Build.0 = Release|x64
+		{2630D180-1B68-4E84-AEAC-42EE8C88B50F}.Release|x86.ActiveCfg = Release|x86
+		{2630D180-1B68-4E84-AEAC-42EE8C88B50F}.Release|x86.Build.0 = Release|x86
+		{E112FFCC-BD88-4056-99E1-0991A0E82588}.Debug|x64.ActiveCfg = Debug|x64
+		{E112FFCC-BD88-4056-99E1-0991A0E82588}.Debug|x64.Build.0 = Debug|x64
+		{E112FFCC-BD88-4056-99E1-0991A0E82588}.Debug|x86.ActiveCfg = Debug|x86
+		{E112FFCC-BD88-4056-99E1-0991A0E82588}.Debug|x86.Build.0 = Debug|x86
+		{E112FFCC-BD88-4056-99E1-0991A0E82588}.Release|x64.ActiveCfg = Release|x64
+		{E112FFCC-BD88-4056-99E1-0991A0E82588}.Release|x64.Build.0 = Release|x64
+		{E112FFCC-BD88-4056-99E1-0991A0E82588}.Release|x86.ActiveCfg = Release|x86
+		{E112FFCC-BD88-4056-99E1-0991A0E82588}.Release|x86.Build.0 = Release|x86
+		{ADE96497-7C11-40B6-AE82-57F956C9F104}.Debug|x64.ActiveCfg = Debug|x64
+		{ADE96497-7C11-40B6-AE82-57F956C9F104}.Debug|x64.Build.0 = Debug|x64
+		{ADE96497-7C11-40B6-AE82-57F956C9F104}.Debug|x86.ActiveCfg = Debug|x86
+		{ADE96497-7C11-40B6-AE82-57F956C9F104}.Debug|x86.Build.0 = Debug|x86
+		{ADE96497-7C11-40B6-AE82-57F956C9F104}.Release|x64.ActiveCfg = Release|x64
+		{ADE96497-7C11-40B6-AE82-57F956C9F104}.Release|x64.Build.0 = Release|x64
+		{ADE96497-7C11-40B6-AE82-57F956C9F104}.Release|x86.ActiveCfg = Release|x86
+		{ADE96497-7C11-40B6-AE82-57F956C9F104}.Release|x86.Build.0 = Release|x86
+		{892CBE15-9ED7-4540-81FA-0EAABA592138}.Debug|x64.ActiveCfg = Debug|x64
+		{892CBE15-9ED7-4540-81FA-0EAABA592138}.Debug|x64.Build.0 = Debug|x64
+		{892CBE15-9ED7-4540-81FA-0EAABA592138}.Debug|x86.ActiveCfg = Debug|x86
+		{892CBE15-9ED7-4540-81FA-0EAABA592138}.Debug|x86.Build.0 = Debug|x86
+		{892CBE15-9ED7-4540-81FA-0EAABA592138}.Release|x64.ActiveCfg = Release|x64
+		{892CBE15-9ED7-4540-81FA-0EAABA592138}.Release|x64.Build.0 = Release|x64
+		{892CBE15-9ED7-4540-81FA-0EAABA592138}.Release|x86.ActiveCfg = Release|x86
+		{892CBE15-9ED7-4540-81FA-0EAABA592138}.Release|x86.Build.0 = Release|x86
+		{B726FB71-D295-41EE-9644-B2B0B1BC8911}.Debug|x64.ActiveCfg = Debug|x64
+		{B726FB71-D295-41EE-9644-B2B0B1BC8911}.Debug|x64.Build.0 = Debug|x64
+		{B726FB71-D295-41EE-9644-B2B0B1BC8911}.Debug|x86.ActiveCfg = Debug|x86
+		{B726FB71-D295-41EE-9644-B2B0B1BC8911}.Debug|x86.Build.0 = Debug|x86
+		{B726FB71-D295-41EE-9644-B2B0B1BC8911}.Release|x64.ActiveCfg = Release|x64
+		{B726FB71-D295-41EE-9644-B2B0B1BC8911}.Release|x64.Build.0 = Release|x64
+		{B726FB71-D295-41EE-9644-B2B0B1BC8911}.Release|x86.ActiveCfg = Release|x86
+		{B726FB71-D295-41EE-9644-B2B0B1BC8911}.Release|x86.Build.0 = Release|x86
+		{32EE9373-A350-42AC-972B-41B2EDABA082}.Debug|x64.ActiveCfg = Debug|x64
+		{32EE9373-A350-42AC-972B-41B2EDABA082}.Debug|x64.Build.0 = Debug|x64
+		{32EE9373-A350-42AC-972B-41B2EDABA082}.Debug|x86.ActiveCfg = Debug|x86
+		{32EE9373-A350-42AC-972B-41B2EDABA082}.Debug|x86.Build.0 = Debug|x86
+		{32EE9373-A350-42AC-972B-41B2EDABA082}.Release|x64.ActiveCfg = Release|x64
+		{32EE9373-A350-42AC-972B-41B2EDABA082}.Release|x64.Build.0 = Release|x64
+		{32EE9373-A350-42AC-972B-41B2EDABA082}.Release|x86.ActiveCfg = Release|x86
+		{32EE9373-A350-42AC-972B-41B2EDABA082}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B726FB71-D295-41EE-9644-B2B0B1BC8911} = {19570575-2F42-4818-A632-193E0A78E576}
+		{32EE9373-A350-42AC-972B-41B2EDABA082} = {DD837AD7-3DE5-4E49-9924-3D73590CCCF3}
+		{892CBE15-9ED7-4540-81FA-0EAABA592138} = {E3F70031-2C0C-490B-BD29-FF28E10CE28F}
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal
